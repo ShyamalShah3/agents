@@ -5,8 +5,8 @@ from FoundationalModel import FoundationalModel
 from typing import Dict,Any
 
 class BedrockClient:
-    anthropic_models = {FoundationalModel.CLAUDE_3_SONNET, FoundationalModel.CLAUDE_3_HAIKU}
-    llama_models = {FoundationalModel.LLAMA_3_70B, FoundationalModel.LLAMA_3_8B}
+    anthropic_models = {FoundationalModel.CLAUDE_35_SONNET, FoundationalModel.CLAUDE_3_OPUS, FoundationalModel.CLAUDE_3_SONNET, FoundationalModel.CLAUDE_3_HAIKU}
+    llama_models = {FoundationalModel.LLAMA_31_70B, FoundationalModel.LLAMA_31_8B}
     
     accept = 'application/json'
     content_type = 'application/json'

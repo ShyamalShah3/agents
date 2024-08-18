@@ -11,7 +11,7 @@ def _parse_model(model_string: str) -> FoundationalModel:
         "CLAUDE_35_SONNET": FoundationalModel.CLAUDE_35_SONNET,
         "CLAUDE_3_OPUS": FoundationalModel.CLAUDE_3_OPUS,
         'CLAUDE_3_SONNET': FoundationalModel.CLAUDE_3_SONNET,
-        'CLAUDE_#_HAIKU': FoundationalModel.CLAUDE_3_HAIKU,
+        'CLAUDE_3_HAIKU': FoundationalModel.CLAUDE_3_HAIKU,
         'LLAMA_3.1_70b': FoundationalModel.LLAMA_31_70B,
         "LLAMA_3.1_8b": FoundationalModel.LLAMA_31_8B
     }

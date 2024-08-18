@@ -1,0 +1,39 @@
+{
+  "app": "python3 app.py",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "requirements*.txt",
+      "source.bat",
+      "**/__init__.py",
+      "**/__pycache__",
+      "tests"
+    ]
+  },
+  "context": {
+    "region": "us-west-2",
+    "ecr_config": {
+      "repository_name": "agents-repository"
+    },
+    "chat_agent_lambda": {
+      "environment_variables": {
+        "REGION": "us-west-2"
+      },
+      "image_tag": "chat-agent",
+      "memory_size": 512,
+      "timeout": 900
+    },
+    "internet_plugin_lambda": {
+      "environment_variables": {
+        "PAGES_TO_SEARCH": "5"
+      },
+      "image_tag": "internet-plugin",
+      "memory_size": 256,
+      "timeout": 900
+    }
+  }
+}
